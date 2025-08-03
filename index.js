@@ -15,6 +15,6 @@ connectToMongoDB(process.env.MONGO_URL
   app.use(cors()); 
   app.use(express.json());
   app.use('/url',urlRoute)
-app.listen(port, () => {
-  console.log(`server is listening on port ${port}`);
+app.listen(PORT, () => {
+  console.log(`server is listening on port ${PORT}`);
 });
