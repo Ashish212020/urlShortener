@@ -3,7 +3,7 @@ const {handleGenerateNewShortURL,handleRedirectToOriginalURL,handleGetAnalytics}
 
 const router=express.Router();
 
-router.post('/generate',handleGenerateNewShortURL);
+router.post('/',handleGenerateNewShortURL);
 router.get('/:shortID',handleRedirectToOriginalURL);
 router.get('/:shortID/analytics',handleGetAnalytics);
 module.exports =router;
