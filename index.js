@@ -4,7 +4,7 @@ const app = express();
 const urlRoute =require('./routes/url');
 const cors = require("cors");
 require('dotenv').config();
-const port = 3000;
+const PORT = process.env.PORT || 8001
 
 connectToMongoDB(process.env.MONGO_URL
   
