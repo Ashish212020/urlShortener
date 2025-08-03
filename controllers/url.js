@@ -29,6 +29,7 @@ async function handleRedirectToOriginalURL(req, res){
             },
         }
     );
+    console.log('server is working')
     res.redirect(entry.redirectURL);
 }
 
