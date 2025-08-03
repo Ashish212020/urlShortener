@@ -1,0 +1,7 @@
+const express =require('express');
+const {handleGenerateNewShortURL}=require('../controllers/url')
+
+const router=express.Router();
+
+router.post('/generate',handleGenerateNewShortURL);
+module.exports =router;
